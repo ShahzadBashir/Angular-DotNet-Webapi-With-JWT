@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "B9dhxNdSIoxTRfKtRJBj1gDKHhsszPz5g29ZCis/V8LpzIPamsQqmeBJyOyjUMX540UzDMgtD3f0qQ8ek4nBiw==",
+  "success": true,
+  "projectFilePath": "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\Commons\\Commons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shahz\\.nuget\\packages\\npgsql\\5.0.4\\npgsql.5.0.4.nupkg.sha512",
+    "C:\\Users\\shahz\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

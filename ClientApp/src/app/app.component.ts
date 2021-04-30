@@ -8,15 +8,8 @@ import { AccountService } from './_services/-account.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  Value:any;
-  constructor(private account:AccountService) { }
-  ngOnInit(): void {
-    this.account.ApiCall().subscribe(response=>{
-       this.Value=response;
-      console.log(response)
-      console.log(this.Value)
-    })
-  }
-  
   title = 'ClientApp';
+  ngOnInit(): void {
+ 
+    }  
 }

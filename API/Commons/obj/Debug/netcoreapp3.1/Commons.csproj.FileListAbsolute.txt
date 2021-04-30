@@ -1,0 +1,9 @@
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\bin\Debug\netcoreapp3.1\Commons.deps.json
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\bin\Debug\netcoreapp3.1\Commons.dll
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\bin\Debug\netcoreapp3.1\Commons.pdb
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.csprojAssemblyReference.cache
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.AssemblyInfoInputs.cache
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.AssemblyInfo.cs
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.csproj.CoreCompileInputs.cache
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.dll
+C:\.net core practice\Angular\Forms\Angular-DotNet-Webapi-With-JWT\API\Commons\obj\Debug\netcoreapp3.1\Commons.pdb

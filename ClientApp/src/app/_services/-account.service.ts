@@ -9,8 +9,8 @@ export class AccountService {
   private ApiUrl=environment.ApiUrl
   constructor(private httpclient:HttpClient) { }
 
-  ApiCall(){
-    return this.httpclient.get(this.ApiUrl + "api/getName")
+  Login(model:any){
+    return this.httpclient.post(this.ApiUrl + "/Account/login",model)
   }
 
 }

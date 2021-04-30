@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -6,9 +7,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace API
@@ -27,6 +30,19 @@ namespace API
         {
             services.AddControllers();
             services.AddCors();
+
+            var privatesecretKey = Configuration.GetSection("AppSetting:Key").Value;
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(privatesecretKey));
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(opt=>
+                opt.TokenValidationParameters=new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey=true,
+                    ValidateIssuer=false,
+                    ValidateAudience=false,
+                    IssuerSigningKey=key
+                }
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +58,8 @@ namespace API
             app.UseRouting();
 
             app.UseCors(privacy=>privacy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

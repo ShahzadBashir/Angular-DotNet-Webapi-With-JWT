@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.net core practice\\Angular\\Forms\\API\\API\\API.csproj": {}
+    "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\.net core practice\\Angular\\Forms\\API\\API\\API.csproj": {
+    "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.net core practice\\Angular\\Forms\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\.net core practice\\Angular\\Forms\\API\\API\\API.csproj",
+        "projectPath": "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\shahz\\.nuget\\packages\\",
-        "outputPath": "C:\\.net core practice\\Angular\\Forms\\API\\API\\obj\\",
+        "outputPath": "C:\\.net core practice\\Angular\\Forms\\Angular-DotNet-Webapi-With-JWT\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shahz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,24 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
